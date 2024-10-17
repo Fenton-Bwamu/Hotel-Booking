@@ -14,11 +14,66 @@
     font: inherit;
     color: inherit;
 }
-body{
+/* Default Styles */
+body {
     margin: 0;
-    color: #222;
-    font-family: 'Poppins', sans-serif;
-}
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero-area {
+    width: 100%;
+    height: auto;
+  }
+  
+  .top-header {
+    background-color: #333;
+    padding: 15px 0;
+  }
+  
+  .header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 150px; /* Default width */
+    height: auto;
+  }
+  
+  .responsive-btn {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  /* Make the SVG and button responsive on smaller screens */
+  @media (max-width: 768px) {
+    .logo {
+      width: 120px;
+    }
+  
+    .responsive-btn {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      width: 100px;
+    }
+  
+    .responsive-btn {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+  }
+  
 button{
     background-color: transparent;
     border: none;
@@ -320,3 +375,9 @@ footer{
     transition: fill 300ms ease-in-out
 }
 
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
